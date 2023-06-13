@@ -136,8 +136,8 @@ There are 5 pre-defined entity references in XML:
 &lt;	<	less than
 &gt;	>	greater than
 &amp;	&	ampersand 
-&apos;	'	apostrophe
-&quot;	"	quotation mark
+&apos;	'	apostrophe  or single quote (')
+&quot;	"	Quote or double quote (“)
 
 
 Comments in XML
