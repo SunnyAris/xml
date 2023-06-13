@@ -117,3 +117,24 @@ In XML, all elements must be properly nested within each other:
 <b><i>This text is bold and italic</i></b>
 In the example above, "Properly nested" simply means that since the <i> element is opened inside the <b> element, it must be closed inside the <b> element.
 
+XML Attribute Values Must Always be Quoted
+XML elements can have attributes in name/value pairs just like in HTML.
+
+In XML, the attribute values must always be quoted:
+
+<note date="12/11/2007">
+  <to>Tove</to>
+  <from>Jani</from>
+</note>
+
+
+To avoid this error, replace the "<" character with an entity reference:
+
+<message>salary &lt; 1000</message>
+There are 5 pre-defined entity references in XML:
+
+&lt;	<	less than
+&gt;	>	greater than
+&amp;	&	ampersand 
+&apos;	'	apostrophe
+&quot;	"	quotation mark
