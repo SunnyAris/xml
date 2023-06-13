@@ -1,0 +1,15 @@
+XML Attributes Must be Quoted
+Attribute values must always be quoted. Either single or double quotes can be used.
+
+For a person's gender, the <person> element can be written like this:
+
+<person gender="female">
+or like this:
+
+<person gender='female'>
+If the attribute value itself contains double quotes you can use single quotes, like in this example:
+
+<gangster name='George "Shotgun" Ziegler'>
+or you can use character entities:
+
+<gangster name="George &quot;Shotgun&quot; Ziegler">
