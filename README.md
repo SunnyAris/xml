@@ -11,7 +11,7 @@ XML was designed to be self-descriptive
       <to>Tove</to>
       <from>Jani</from>
       <heading>Reminder</heading>
-      <body>Don't forget me this     weekend!</body>
+      <body>Don't forget me this weekend!</body>
     </note>
 
 The XML above is quite self-descriptive:
