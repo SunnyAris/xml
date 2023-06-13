@@ -1,0 +1,59 @@
+XML Tree Structure
+XML documents are formed as element trees.
+
+An XML tree starts at a root element and branches from the root to child elements.
+
+All elements can have sub elements (child elements):
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root> 
+
+Self-Describing Syntax
+XML uses a much self-describing syntax.
+
+A prolog defines the XML version and the character encoding:
+
+<?xml version="1.0" encoding="UTF-8"?>
+The next line is the root element of the document:
+
+<bookstore>
+The next line starts a <book> element:
+
+<book category="cooking">
+The <book> elements have 4 child elements: <title>, <author>, <year>, <price>.
+
+<title lang="en">Everyday Italian</title>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+The next line ends the book element:
+
+</book>
+You can assume, from this example, that the XML document contains information about books in a bookstore.
+
+
+
+
+Example: XML News
+
+<?xml version="1.0" encoding="UTF-8"?>
+<nitf>
+  <head>
+    <title>Colombia Earthquake</title>
+  </head>
+  <body>
+    <headline>
+      <hl1>143 Dead in Colombia Earthquake</hl1>
+    </headline>
+    <byline>
+      <bytag>By Jared Kotler, Associated Press Writer</bytag>
+    </byline>
+    <dateline>
+      <location>Bogota, Colombia</location>
+      <date>Monday January 25 1999 7:28 ET</date>
+    </dateline>
+  </body>
+</nitf>
