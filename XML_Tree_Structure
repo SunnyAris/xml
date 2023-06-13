@@ -57,3 +57,63 @@ Example: XML News
     </dateline>
   </body>
 </nitf>
+
+
+
+XML Documents Must Have a Root Element
+XML documents must contain one root element that is the parent of all other elements:
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+
+In this example <note> is the root element:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<note>
+  <to>Tove</to>
+  <from>Jani</from>
+  <heading>Reminder</heading>
+  <body>Don't forget me this weekend!</body>
+</note>
+
+
+This line is called the XML prolog:
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+UTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.
+
+Note: The XML prolog does not have a closing tag! This is not an error. The prolog is not a part of the XML document.
+
+The XML prolog is optional. If it exists, it must come first in the document.
+
+To avoid errors, you should specify the encoding used, or save your XML files as UTF-8.
+
+UTF-8 is the default character encoding for XML documents.
+
+All XML Elements Must Have a Closing Tag
+In XML, it is illegal to omit the closing tag. All elements must have a closing tag:
+
+<p>This is a paragraph.</p>
+<br />
+
+
+Opening and closing tags must be written with the same case:
+
+<message>This is correct</message>
+
+"Opening and closing tags" are often referred to as "Start and end tags". Use whatever you prefer. It is exactly the same thing.
+
+! XML Elements Must be Properly Nested
+In HTML, you might see improperly nested elements:
+
+<b><i>This text is bold and italic</b></i>
+In XML, all elements must be properly nested within each other:
+
+<b><i>This text is bold and italic</i></b>
+In the example above, "Properly nested" simply means that since the <i> element is opened inside the <b> element, it must be closed inside the <b> element.
+
