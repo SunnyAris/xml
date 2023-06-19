@@ -1,44 +1,47 @@
-XML Tree Structure
+# XML Tree Structure
 XML documents are formed as element trees.
 
 An XML tree starts at a root element and branches from the root to child elements.
 
-All elements can have sub elements (child elements):
+## All elements can have sub elements (child elements):
 
+```
 <root>
   <child>
     <subchild>.....</subchild>
   </child>
 </root> 
+```
 
 Self-Describing Syntax
 XML uses a much self-describing syntax.
 
-A prolog defines the XML version and the character encoding:
+## A prolog defines the XML version and the character encoding:
 
-<?xml version="1.0" encoding="UTF-8"?>
+```<?xml version="1.0" encoding="UTF-8"?>```
 The next line is the root element of the document:
 
-<bookstore>
-The next line starts a <book> element:
+```<bookstore>```
+The next line starts a ```<book>``` element:
 
-<book category="cooking">
-The <book> elements have 4 child elements: <title>, <author>, <year>, <price>.
+```<book category="cooking">```
+The ```<book>``` elements have 4 child elements: ```<title>```, ```<author>```, ```<year>```, ```<price>```.
 
-<title lang="en">Everyday Italian</title>
+```<title lang="en">Everyday Italian</title>
 <author>Giada De Laurentiis</author>
 <year>2005</year>
 <price>30.00</price>
-The next line ends the book element:
+```
+### The next line ends the book element:
 
-</book>
+```</book>```
 You can assume, from this example, that the XML document contains information about books in a bookstore.
 
 
 
 
-Example: XML News
-
+### Example: XML News
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <nitf>
   <head>
@@ -57,21 +60,22 @@ Example: XML News
     </dateline>
   </body>
 </nitf>
+```
 
 
-
-XML Documents Must Have a Root Element
+## XML Documents Must Have a Root Element
 XML documents must contain one root element that is the parent of all other elements:
 
+```
 <root>
   <child>
     <subchild>.....</subchild>
   </child>
 </root>
+```
 
-
-In this example <note> is the root element:
-
+### In this example <note> is the root element:
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
   <to>Tove</to>
@@ -79,11 +83,11 @@ In this example <note> is the root element:
   <heading>Reminder</heading>
   <body>Don't forget me this weekend!</body>
 </note>
+```
 
+### This line is called the XML prolog:
 
-This line is called the XML prolog:
-
-<?xml version="1.0" encoding="UTF-8"?>
+```<?xml version="1.0" encoding="UTF-8"?>```
 
 UTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.
 
@@ -95,50 +99,53 @@ To avoid errors, you should specify the encoding used, or save your XML files as
 
 UTF-8 is the default character encoding for XML documents.
 
-All XML Elements Must Have a Closing Tag
+### All XML Elements Must Have a Closing Tag
 In XML, it is illegal to omit the closing tag. All elements must have a closing tag:
 
+```
 <p>This is a paragraph.</p>
 <br />
-
+```
 
 Opening and closing tags must be written with the same case:
 
-<message>This is correct</message>
+```<message>This is correct</message>```
 
 "Opening and closing tags" are often referred to as "Start and end tags". Use whatever you prefer. It is exactly the same thing.
 
-! XML Elements Must be Properly Nested
+## ! XML Elements Must be Properly Nested
 In HTML, you might see improperly nested elements:
 
-<b><i>This text is bold and italic</b></i>
+```<b><i>```This text is bold and italic```</b></i>```
 In XML, all elements must be properly nested within each other:
 
-<b><i>This text is bold and italic</i></b>
-In the example above, "Properly nested" simply means that since the <i> element is opened inside the <b> element, it must be closed inside the <b> element.
+```<b><i>```This text is bold and italic```</i></b>```
+In the example above, "Properly nested" simply means that since the <i> element is opened inside the```<b>```element, it must be closed inside the ```<b>``` element.
 
-XML Attribute Values Must Always be Quoted
+### XML Attribute Values Must Always be Quoted
 XML elements can have attributes in name/value pairs just like in HTML.
 
 In XML, the attribute values must always be quoted:
-
+```
 <note date="12/11/2007">
   <to>Tove</to>
   <from>Jani</from>
 </note>
+```
 
+To avoid this error, replace the ```"<"``` character with an entity reference:
 
-To avoid this error, replace the "<" character with an entity reference:
+```<message>salary &lt; 1000</message>```
 
-<message>salary &lt; 1000</message>
-There are 5 pre-defined entity references in XML:
+### There are 5 pre-defined entity references in XML:
 
+```
 &lt;	<	less than
 &gt;	>	greater than
 &amp;	&	ampersand 
 &apos;	'	apostrophe  or single quote (')
 &quot;	"	Quote or double quote (“)
-
+```
 
 Comments in XML
 The syntax for writing comments in XML is similar to that of HTML:
@@ -158,7 +165,7 @@ XML stores a new line as LF.
 
 An XML breakfast menu
 
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <breakfast_menu>
   <food>
@@ -192,3 +199,4 @@ An XML breakfast menu
     <calories>950</calories>
   </food>
 </breakfast_menu>
+```
