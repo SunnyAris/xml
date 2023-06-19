@@ -11,20 +11,20 @@ An element can contain:
 - other elements
 - or a mix of the above
 
-  <bookstore>
-    <book category="children">
-     <title>Harry Potter</title>
-     <author>J K. Rowling</author>
-     <year>2005</year>
-     <price>29.99</price>
-   </book>
-   <book category="web">
-      <title>Learning XML</title>
-      <author>Erik T. Ray</author>
-     <year>2003</year>
-     <price>39.95</price>
-   </book>
-  </bookstore>
+ ```<bookstore>
+   <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+  <book category="web">
+    <title>Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+</bookstore>```
 
 
 In the example above:
