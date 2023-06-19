@@ -37,6 +37,6 @@ There are no rules about when to use attributes or when to use elements in XML.
 Avoid XML Attributes?
 Some things to consider when using attributes are:
 
-attributes cannot contain multiple values (elements can)
-attributes cannot contain tree structures (elements can)
-attributes are not easily expandable (for future changes)
+- attributes cannot contain multiple values (elements can)
+- attributes cannot contain tree structures (elements can)
+- attributes are not easily expandable (for future changes)
