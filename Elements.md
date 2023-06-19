@@ -24,8 +24,8 @@ An element can contain:
     <year>2003</year>
     <price>39.95</price>
   </book>
-</bookstore>```
-
+</bookstore>
+```
 
 In the example above:
 
