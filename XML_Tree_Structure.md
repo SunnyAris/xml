@@ -120,7 +120,7 @@ In HTML, you might see improperly nested elements:
 In XML, all elements must be properly nested within each other:
 
 ```<b><i>```This text is bold and italic```</i></b>```
-In the example above, "Properly nested" simply means that since the <i> element is opened inside the```<b>```element, it must be closed inside the ```<b>``` element.
+In the example above, "Properly nested" simply means that since the ```<i>``` element is opened inside the```<b>```element, it must be closed inside the ```<b>``` element.
 
 ### XML Attribute Values Must Always be Quoted
 XML elements can have attributes in name/value pairs just like in HTML.
