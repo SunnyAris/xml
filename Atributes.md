@@ -18,7 +18,8 @@ or you can use character entities:
 ## XML Elements vs. Attributes
 Take a look at these two examples:
 
-```<person gender="female">
+```
+<person gender="female">
   <firstname>Anna</firstname>
   <lastname>Smith</lastname>
 </person>
