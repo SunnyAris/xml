@@ -149,9 +149,9 @@ To avoid this error, replace the ```"<"``` character with an entity reference:
 
 Comments in XML
 The syntax for writing comments in XML is similar to that of HTML:
-
+```
 <!-- This is a comment -->
-
+```
 XML Stores New Line as LF
 Windows applications store a new line as: carriage return and line feed (CR+LF).
 
