@@ -74,7 +74,7 @@ XML documents must contain one root element that is the parent of all other elem
 </root>
 ```
 
-### In this example <note> is the root element:
+### In this example ```<note>``` is the root element:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
