@@ -26,7 +26,8 @@ Take a look at these two examples:
   <gender>female</gender>
   <firstname>Anna</firstname>
   <lastname>Smith</lastname>
-</person>```
+</person>
+```
 
 In the first example, gender is an attribute. In the last example, gender is an element. Both examples provide the same information.
 
