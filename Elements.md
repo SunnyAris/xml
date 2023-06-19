@@ -1,11 +1,11 @@
-An XML document contains XML Elements.
+# An XML document contains XML Elements.
 
-What is an XML Element?
+## What is an XML Element?
 An XML element is everything from (including) the element's start tag to (including) the element's end tag.
-
+```
   <price>29.99</price>
-
-An element can contain:
+```
+## An element can contain:
 - text
 - attributes
 - other elements
@@ -27,27 +27,27 @@ An element can contain:
 </bookstore>
 ```
 
-In the example above:
+## In the example above:
 
-<title>, <author>, <year>, and <price> have text content because they contain text (like 29.99).
+```<title>```, ```<author>```, ```<year>```, and ```<price>``` have text content because they contain text (like 29.99).
 
-<bookstore> and <book> have element contents, because they contain elements.
+```<bookstore>``` and ```<book>``` have element contents, because they contain elements.
 
-<book> has an attribute (category="children").
+```<book>``` has an attribute (category="children").
 
 An element with no content is said to be empty.
 
 In XML, you can indicate an empty element like this:
 
-<element></element>
+```<element></element>```
 You can also use a so called self-closing tag:
 
-<element />
+```<element />```
 
 
-Create descriptive names, like this: <person>, <firstname>, <lastname>.
+Create descriptive names, like this: ```<person>```, ```<firstname>```, ```<lastname>```.
 
-Create short and simple names, like this: <book_title> not like this: <the_title_of_the_book>.
+Create short and simple names, like this: ```<book_title>``` not like this: ```<the_title_of_the_book>```.
 
 Avoid "-". If you name something "first-name", some software may think you want to subtract "name" from "first".
 
